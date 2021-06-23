@@ -1,0 +1,228 @@
+.container-dash
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353423;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    
+}
+
+.container-dash .card-dash
+{
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: rgba(220, 20, 60, 0.973);
+    color: #fff;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.container-dash .card-dash .btn
+{
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container-dash .card-dash h1 {
+    text-transform: capitalize;
+}
+
+
+.container-dash .card-dash form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-dash .card-dash form label
+{
+    position: relative;
+    left: -125px;
+    top: 18px;
+    color: #fff;
+}
+
+.container-dash .card-dash form .input
+{
+    color: white;
+    background-color: #0005;
+    outline: none;
+    border: 0;
+    padding: 5px;
+}
+
+.container-dash .card-dash form input[type="submit"] {
+    width: 100%;
+    outline: none;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow:  -2px -2px 6px rgba(255,255,255,0.05),
+                  2px 2px 6px rgba(0,0,0,0.5); 
+    cursor: pointer;
+}
+
+.container-dash .card-dash form input[type="submit"]:active {
+    color: #006c9c;
+    margin-top: 15px;
+    box-shadow:  inset -2px -2px 6px rgba(255,255,255,0.05),
+                 inset 2px 2px 6px rgba(0,0,0,0.5); 
+}
+
+.container-dash .card-body
+{
+    margin-top: 14rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -75px;
+}
+.container-dash .card-body .card-tarefa
+{
+    position: relative;
+    border: none;
+    width: 350px;
+    height: 200px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(85px);
+    padding: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.container-dash .card-body .card-tarefa .header
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+}
+
+.container-dash .card-body .card-tarefa:hover .header
+{
+    transform: translate(-2px, -70px) scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.container-dash .card-body .card-tarefa .body
+{
+    position: absolute;
+    padding: 15px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-dash .card-body .card-tarefa .body h2
+{
+    text-transform: capitalize;
+}
+
+.container-dash .card-body .card-tarefa:hover .body
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(50px);
+}
+
+.container-dash .card-body .card-tarefa .body button {
+    position: relative;
+    left: 190px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    padding: 5px;
+    transition: 0.8s ease-in-out;
+    outline: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.container-dash .card-body .card-tarefa:hover .body button {
+    position: relative;
+    left: 190px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    padding: 5px;
+    margin-bottom: -30px;
+    transform: translateY(-50px);
+    cursor: pointer;
+    background: tomato;
+}
+
+.container-dash .card-body .card-tarefa:hover .body .c {
+    position: relative;
+    left: -20px;
+    top: 185px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    padding: 5px;
+    margin-bottom: -30px;
+    transform: translateY(-50px);
+    cursor: pointer;
+    background: springgreen;
+}
+
+.container-dash .card-body .card-tarefa:hover .body .n
+{
+    position: relative;
+    left: 20px;
+    top: 190px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0;
+    padding: 5px;
+    margin-bottom: -30px;
+    transform: translateY(-50px);
+    cursor: pointer;
+    background: #fff;
+}

@@ -1,0 +1,125 @@
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232323;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.container .cards-login 
+{
+
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(85px);
+}
+
+
+.container .cards-login .header 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .cards-login .header h1 
+{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    transform: translate(-2px, 75px)  scale(1.4);
+    transition: 0.5s ease-in-out;
+}
+
+.container .cards-login:hover .header h1 
+{
+    transform: translateY(-30px);
+}
+
+.container .cards-login .body form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .cards-login:hover .body form
+{ 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px);
+}
+
+.container .cards-login .body form label 
+{
+    position: relative;
+    top: -1px;
+    padding: 5px;
+    left: -65px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container .cards-login .body form input
+{
+    text-decoration: none;
+    outline: none;
+    padding: 3px;
+    text-align: center;
+}
+
+.container .cards-login .body form .button
+{
+    margin: 5px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    
+}
+
+.container .cards-login .body form input[type="button"] {
+    margin-top: 20px;
+    box-shadow:  -2px -2px 6px rgba(255,255,255,0.05),
+                  2px 2px 6px rgba(0,0,0,0.5); 
+}
+.container .cards-login .body form input[type="button"]:active {
+    color: #006c9c;
+    margin-top: 20px;
+    box-shadow:  inset -2px -2px 6px rgba(255,255,255,0.05),
+                 inset 2px 2px 6px rgba(0,0,0,0.5); 
+}
+
+.container .cards-login:hover .body form .button
+{
+    transform: translateY(25px);
+}
